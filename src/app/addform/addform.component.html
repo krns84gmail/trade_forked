@@ -1,0 +1,37 @@
+<mat-form-field appearance="legacy">
+    <mat-placeholder>Enter trade data time</mat-placeholder>
+    <!-- <input autocomplete="off" matInput [(ngModel)]="formdata.trade_data_time" [matDatepicker]="picker" (ngModelChange)="onDataChange($event)" readonly (focus)="picker.open()" >
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker> -->    
+    <input matInput [formControl]="date" [matDatetimepicker]="datetimePicker" required autocomplete="false" (ngModelChange)="onDataChange($event)" readonly (focus)="datetimePicker.open()">
+    <mat-datetimepicker-toggle [for]="datetimePicker" matSuffix></mat-datetimepicker-toggle>
+    <mat-datetimepicker #datetimePicker type="datetime" ></mat-datetimepicker>
+</mat-form-field>
+<mat-form-field appearance="legacy">
+    <mat-label>Enter stock name</mat-label>
+    <input matInput [(ngModel)]="formdata.stock_name" autocomplete="off" required>
+</mat-form-field>
+<mat-form-field appearance="legacy">
+    <mat-label>Enter listing price</mat-label>
+    <input matInput type="number" required [(ngModel)]="formdata.listing_price" autocomplete="off">
+</mat-form-field>
+<mat-form-field appearance="legacy" >
+    <mat-label>Enter quantity</mat-label>
+    <input matInput type="number" [(ngModel)]="formdata.quantity" autocomplete="off" required>
+</mat-form-field>
+  <mat-form-field appearance="legacy">
+    <mat-label>Select trade type</mat-label>
+    <mat-select [(ngModel)]="formdata.trade_type" required>
+      <mat-option value="Buy">Buy</mat-option>
+      <mat-option value="Sell">Sell</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter price per unit</mat-label>
+    <input matInput type="number" required [(ngModel)]="formdata.price_per_unit" autocomplete="off">
+</mat-form-field>
+<div mat-dialog-actions>
+    <button  mat-button (click)="cancel()">Cancel</button>
+    <button  mat-button cdkFocusInitial [mat-dialog-close]="formdata" (click)="save()">Save</button>
+</div>
+

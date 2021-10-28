@@ -1,0 +1,26 @@
+::ng-deep.mat-datepicker-content .mat-calendar{
+    width: unset !important;
+    height: unset !important;
+}
+mat-form-field {
+    width: 100%;
+  }
+  ::ng-deep .mat-datetimepicker-calendar[mode=auto]{
+    width: unset !important;
+    height: unset !important;
+}
+::ng-deep .mat-datetimepicker-calendar-header{
+    margin-inline: auto;
+    
+    color:green !important;
+    text-align: center !important;
+    
+}
+::ng-deep .mat-datetimepicker-calendar[mode=auto]{
+    display: block !important;
+}
+::ng-deep .mat-datetimepicker-calendar-header-date-time{
+    display: inline-flex !important;
+    font-size: 15px !important;
+}
+

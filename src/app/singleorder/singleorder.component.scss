@@ -1,0 +1,30 @@
+.ordercard {    
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%; 
+    border-style: double;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 18px;
+    
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  .align{
+    text-align: center;
+  }
+  .icon{
+    width:20%;
+    display: block;
+    margin-right: auto;
+  }
+  

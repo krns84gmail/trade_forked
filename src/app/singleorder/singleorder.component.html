@@ -1,0 +1,51 @@
+<div class="ordercard">
+    <table *ngIf="tableData" class="mat-elevation-z8">
+        <tr>
+            <th class="align" colspan="2">
+                <img src="assets/images/logo.png" class="icon">
+            </th>
+        </tr>
+        <tr>
+            <th class="align" colspan="2">ORDER RECEIPT</th>
+        </tr>
+        <tr>
+            <th>ORDER NO</th>
+            <td>
+                <label>{{tableData[0].order_id}}</label>
+            </td> 
+        </tr>
+        <tr>
+        <th>STOCK NAME</th>        
+        <td>
+            <label>{{tableData[0].stock_name}}</label>
+        </td>        
+        </tr>
+        <tr>
+            <th>QUANTITY</th>        
+            <td>
+                <label>{{tableData[0].quantity}}</label>
+            </td>        
+            </tr>
+            <tr>
+                <th>STOCK TYPE</th>        
+                <td>
+                    <label>{{tableData[0].stock_type}}</label>
+                </td>        
+                </tr>
+                <tr>
+                    <th>PRICE PER UNIT</th>        
+                    <td>
+                        <label>{{tableData[0].price_per_unit}}</label>
+                    </td>        
+                    </tr>
+                    <tr>
+                        <th>STATUS</th>        
+                        <td>
+                            <label>{{tableData[0].status}}</label>
+                        </td>        
+                        </tr>
+                        
+        
+        </table>
+      
+</div>

@@ -1,0 +1,100 @@
+.mat-cell {
+    color: black;
+    border-bottom-color: rgba(0, 0, 0, 0.12)
+}
+.mat-green{
+    background-color: green;
+}
+.mDiv{
+    overflow: auto !important;
+}
+.mat-table {
+    background: white;
+    // width: 100%;
+    // overflow: auto !important;
+}
+.mat-header-cell {
+    background: var(--background-color);
+    color: black;
+}
+.buttoncls {
+    background-color: green;
+    color: white;
+    margin-left: 10px;
+    line-height: 0;
+    padding: 2px;
+  }
+.linedisplay{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 2px;
+  }
+.align {
+    line-height: 0;
+    padding: 0;
+    //min-width: 50px;    
+}
+.alignEdit {
+    display: block; 
+    line-height: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+    color: white;
+}
+
+  .mat-cell,
+.mat-header-cell {
+    word-wrap: initial;
+    display: table-cell;
+    padding: 0px 10px;
+    line-break: unset;
+    width: 100%;
+    white-space: nowrap;
+    //overflow: hidden;
+    vertical-align: middle;
+}
+.mat-row,
+.mat-header-row {
+    display: table-row;
+}  
+::ng-deep.mat-datepicker-content .mat-calendar{
+    width: unset !important;
+    height: unset !important;
+}
+mat-form-field {
+    width: 100%;
+  }
+  ::ng-deep .mat-datetimepicker-calendar[mode=auto]{
+    width: unset !important;
+    height: unset !important;
+}
+::ng-deep .mat-datetimepicker-calendar-header{
+    margin-inline: auto;
+    
+    color:green !important;
+    text-align: center !important;
+    
+}
+::ng-deep .mat-datetimepicker-calendar[mode=auto]{
+    display: block !important;
+}
+::ng-deep .mat-datetimepicker-calendar-header-date-time{
+    display: inline-flex !important;
+    font-size: 15px !important;
+}
+
+.mat-light{
+    background-color:#edf4f7;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.ordrLink{
+    text-decoration: none;
+    color:black
+}
+
+ 
