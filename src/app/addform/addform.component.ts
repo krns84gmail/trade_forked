@@ -16,7 +16,7 @@ export class AddformComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public formdata:any) {  }
 
   ngOnInit(): void {
-    console.log('TRADDDDDEEEEE')
+    console.log('TRADDeeeee')
     this.change = false
   }
 
