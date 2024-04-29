@@ -17,6 +17,7 @@ export class AppComponent implements OnInit{
  
   constructor(){  }
   ngOnInit(){
+    //new change from trade
 //     this.getData()
 
   }
